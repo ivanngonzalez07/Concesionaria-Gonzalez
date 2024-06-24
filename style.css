@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    height: 85px;
+    background-color: chartreuse;    
+    padding: 20px 25px;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;   
+}
+
+
+.nav{
+    position: absolute;
+    top: 27px;
+    right: 30px;
+  }
+  
+.nav2{
+    position: absolute;
+    top: 42px;
+    right: 30px;
+}
+  
+.nav3{
+    position: absolute;
+    right: 200px;
+    top: 27px;
+    
+}
+
+.nav3 :hover{
+    color: red;
+    text-decoration: dotted;
+}
+
+
+footer{
+    background-color: chartreuse;
+    height: 100px;
+    position: relative;
+    padding: 15px 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 0px;
+   
+}
+
+.color_1main{
+    background-color: cyan;
+    height: 50px;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main_autos{
+    background-color: aqua;
+    padding-left: 7.5px;
+}
+
+main img{
+    width: 51%;
+    
+}
+
+.vaso{
+    height: 320px;
+}
+
+
+.contenedor_limite_volkswagen{
+    background-color:  cyan;    
+    padding: 15px;
+    text-align: center;
+    width: 100%; 
+    padding-top: 45px;   
+}
+
+.hola{
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    
+}
+
+.hola2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-family: "Playwrite NZ";
+}
+
+
+.padre{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    
+    background-color: yellowgreen;
+    width: 215px;
+    height: 270px;
+    border: 5px solid green;
+    border-radius: 50px;  
+    padding-top: 40px;   
+}
+
+.card :hover{
+    color: red;
+    text-decoration: dotted;
+}
+
+.card img{
+    width: 80%;
+    height: 65%;
+    border: 3px solid black;
+
+}
+
+.contenedor_limite_grid{
+    background-color: yellowgreen;   
+    border: 5px solid green;
+    border-radius: 20px;         
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    max-width:  590px;
+    max-height: 820px;   
+    height: 510px;
+}
+
+.boca{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color_2main{
+    background-color: cyan;
+    height: 680px;
+    padding-top: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(6, 200px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+    margin:  auto auto;
+    margin-bottom: 20px;
+}
+
+.div1 :hover{
+    color: red;
+    text-decoration: dotted;
+    
+}
+
+.div2 {
+        grid-area: 2 / 1 / 4 / 3; 
+        margin:  auto auto;               
+}
+
+.div3 { grid-area: 1 / 3 / 2 / 5; 
+    margin:  auto auto;
+    margin-bottom: 20px;
+}
+
+.div3 :hover{
+    color: red;
+    text-decoration: dotted;
+}
+
+.div4 { 
+    grid-area: 2 / 3 / 4 / 5; 
+    margin:  auto auto;    
+}
+
+.div5 { 
+    grid-area: 4 / 1 / 5 / 3; 
+    margin:  auto auto;
+    margin-bottom: 20px;
+}
+
+.div5 :hover {
+    color: red;
+    text-decoration: dotted;
+}
+
+.div6 { 
+    grid-area: 5 / 1 / 7 / 3; 
+    margin:  auto auto;    
+}
+
+.div7 { 
+    grid-area: 4 / 3 / 5 / 5; 
+    margin:  auto auto;
+    margin-bottom: 20px;
+}
+
+.div7 :hover{
+    color: red;
+    text-decoration: dotted;
+}
+
+.div8 { 
+    grid-area: 5 / 3 / 7 / 5;
+    margin:  auto auto;    
+}
+
+.div2 img{
+
+    width: 200px;
+    border: 5px solid black;
+    height: 150px;
+
+}
+
+.div4 img{
+
+    width: 200px;
+    border: 5px solid black;  
+    height: 150px; 
+}
+
+.div6 img{
+
+    width: 200px;
+    border: 5px solid black;   
+    height: 150px;
+}
+
+.div8 img{
+
+    width: 200px;
+    border: 5px solid black;  
+    height: 150px;  
+}
+
+/*-----------media query------------------*/
+
+@media screen and (max-width: 889px){
+    .vaso{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+
+    header{
+        height: 130px;
+    }
+    
+    .nav{
+        right: 30px;
+        top: 65px;
+    }
+   
+    .nav2{
+        right: 30px;
+        top: 80px;
+    }
+    
+    .nav3{        
+        top: 100px;
+        right: 30px;
+    }
+
+    .div2 img{
+        width: 170px;
+    }
+
+    .div4 img{
+        width: 170px;
+    }
+
+    .div6 img{
+        width: 170px;
+    }
+
+    .div8 img{
+        width: 170px;
+    }
+
+    
+    .vaso{
+        height: 600px;
+    }
+
+    
+}
+@media screen and (max-width: 460px) {
+    
+    .vaso{
+        height: 1130px;
+    }
+
+   
+}
+
+@media screen and (max-width: 405px){
+    
+    header{
+        height: 120px;
+        
+    }
+    
+    .nav{
+        right: 7px;
+        top: 30px;
+    }
+   
+    .nav2{
+        right: 7px;
+        top: 48px;
+    }
+    
+    .nav3{        
+        right: 7px;
+        top: 75px;        
+    }
+
+   
+}
+
+@media screen and (max-width: 386px){
+    header{
+        height: 135px;
+       
+    }
+    
+    .nav{
+        right: 10px;
+        top: 65px;
+    }
+   
+    .nav2{
+        right: 10px;
+        top: 83px;
+    }
+    
+    .nav3{        
+        right: 10px;
+        top: 100px; 
+               
+    }
+
+    .div2 img{
+        width: 160px;
+    }
+
+    .div4 img{
+        width: 160px;
+    }
+
+    .div6 img{
+        width: 160px;
+    }
+
+    .div8 img{
+        width: 160px;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    .div2 img{
+        width: 140px;
+        height: 130px;
+    }
+
+    .div4 img{
+        width: 140px;
+        height: 130px;
+    }
+
+    .div6 img{
+        width: 140px;
+        height: 130px;
+    }
+
+    .div8 img{
+        width: 140px;
+        height: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
